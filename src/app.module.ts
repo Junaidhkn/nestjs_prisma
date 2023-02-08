@@ -3,6 +3,6 @@ import { PrismaModule } from './prisma/prisma.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [PrismaModule, UsersModule],
+  imports: [UsersModule],
 })
 export class AppModule {}
