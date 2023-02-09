@@ -22,14 +22,10 @@ model Post {
   id         String     @id @default(uuid())
   title      String
   body       String
-  published  Boolean    @default(true)
   author     User       @relation(fields: [authorId], references: [id])
   authorId   String
   createdAt  DateTime   @default(now())
   updatedAt  DateTime   @updatedAt
-  comments   Json
-  views      Int        @default(0)
-  likes      Int        @default(0)
   categories Category[]
 }
 
