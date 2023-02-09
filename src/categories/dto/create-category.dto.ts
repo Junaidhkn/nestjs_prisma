@@ -1,8 +1,4 @@
-import {
-  IsNotEmpty,
-  IsString,
-  MinLength,
-} from 'class-validator/types/decorator/decorators';
+import { IsNotEmpty, IsString, MinLength } from 'class-validator';
 
 export class CreateCategoryDto {
   @MinLength(2)
